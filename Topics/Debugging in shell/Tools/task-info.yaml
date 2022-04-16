@@ -1,0 +1,17 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: In any text editor
+- text: In PyCharm
+- text: In most Python shells
+- text: In IDLE
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8246#comment
+status: Solved
+record: -1

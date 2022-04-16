@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: The files do not open and we get results of functions / methods from them
+    right away, without going into details
+- text: Files of other modules open but debugger does not highlight the lines
+- text: The files do not open but we can see what is happening inside them in the
+    "Stack" area
+files:
+- name: main.py
+  visible: true
+  text: |+
+    #  You can experiment here, it won’t be checked
+
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/8248#comment
+status: Solved
+record: -1

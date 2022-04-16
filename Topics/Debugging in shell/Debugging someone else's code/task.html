@@ -1,0 +1,19 @@
+<h2>Debugging someone else's code</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Let's say your fellow student who also learns programming has written a piece of code but it doesn't work correctly. And as you now know how to debug, they asked you to help find an error.</p> 
+  <p>You understand that the bug is in the function <code class="language-python">which_type()</code>:</p> 
+  <pre><code class="language-python">def which_type(el):
+    """ This function is needed to control which arguments are passed further. """
+    if isinstance(type(el), 'str'):             # 3rd line
+        return('The string has been given.')    # 4th line
+    else:                                       # 5th line
+        return('Another type has been given.')  # 6th line</code></pre> 
+  <p>It is activated in the following piece of code:</p> 
+  <pre><code class="language-python">for element in [3, 'three', ['3'], {'three'}]:
+    print(which_type(element))</code></pre> 
+  <p>Run this code in IDLE Shell (don't forget to copy the function first!). Use the debugging tools to find the error. At which step does the program behave not as expected? In which line of the function is the problem? Write only the number of the line in the text field below.</p> 
+  <p>If you already see what the problem with the code is, don't just write the answer. The point of this topic is to learn how to use IDLE's debugger, so use this opportunity to practice.</p>
+ </body>
+</html>
