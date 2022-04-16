@@ -330,6 +330,27 @@ files:
     if __name__ == '__main__':
         AnalyzerTest("analyzer.code_analyzer").run_tests()
   learner_created: false
+- name: analyzer/tst/test2
+  visible: true
+  learner_created: true
+- name: analyzer/tst/test3.html
+  visible: true
+  learner_created: true
+- name: analyzer/tst/test2.py
+  visible: true
+  learner_created: true
+- name: analyzer/testA.py
+  visible: true
+  learner_created: true
+- name: analyzer/tst/test
+  visible: true
+  learner_created: true
+- name: analyzer/tst/test1.py
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/112/stages/611/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 16 Apr 2022 14:53:17 UTC
 record: -1
