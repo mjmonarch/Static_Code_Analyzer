@@ -41,50 +41,6 @@ files:
         def Print2():
             print('q')
   learner_created: false
-- name: test/this_stage/test_3.py
-  visible: false
-  text: |
-    class Test:
-        def __init__(self, alpha, beta=1):
-            self.alpha = alpha
-            self.beta = beta
-
-        def function(self):
-            print(self.alpha)
-
-        def mutable_var(self, s=[]):
-            print(s)
-
-        def okey(self, s=None):
-            print("okey")
-  learner_created: false
-- name: test/this_stage/test_4.py
-  visible: false
-  text: |
-    class Test:
-        def __init__(self, alpha, Beta=1):
-            self.alpha = alpha
-
-        def function(self):
-            print(self.alpha)
-
-        def okey(self, s=None):
-            print("okey")
-  learner_created: false
-- name: test/this_stage/test_5.py
-  visible: false
-  text: |
-    class Test:
-        def __init__(self, alpha, beta=1):
-            Beta = beta
-
-        def function(self):
-            print("Beta")
-
-        def okey(self, s=None):
-            Variable = s
-            print(Variable)
-  learner_created: false
 - name: tests.py
   visible: false
   text: |
@@ -321,6 +277,116 @@ files:
     if __name__ == '__main__':
         AnalyzerTest("analyzer.code_analyzer").run_tests()
   learner_created: false
+- name: analyzer/testA.py
+  visible: true
+  text: '    print(''a'') # TODO a'
+  learner_created: true
+- name: analyzer/tst/test2.py
+  visible: true
+  text: |
+    print('hello')
+    print('hello')  # TODO
+    print('hello')  # TODO # TODO
+    # todo
+    # TODO just do it
+    print('todo')
+    print('TODO TODO')
+    todo()
+    todo = 'todo'
+  learner_created: true
+- name: analyzer/tst/test1.py
+  visible: true
+  text: |
+    print('hello')
+    print('hello');
+    print('hello');;;
+    print('hello');  # hello
+    # hello hello hello;
+    greeting = 'hello;'
+    print('hello')  # ;
+  learner_created: true
+- name: analyzer/tst/test4.py
+  visible: true
+  text: |
+    class CorrectOne:
+        pass
+
+
+    class spaces:
+        pass
+
+
+    class snake_case:
+        pass
+
+
+    class Inheritance(CorrectOne):
+        pass
+  learner_created: true
+- name: analyzer/tst/test
+  visible: true
+  learner_created: true
+- name: analyzer/tst/test3.html
+  visible: true
+  text: |
+    print('hello')
+    print('hello')  # TODO
+    print('hello')  # TODO # TODO
+    # todo
+    # TODO just do it
+    print('todo')
+    print('TODO TODO')
+    todo()
+    todo = 'todo'
+  learner_created: true
+- name: test/this_stage/test_4.py
+  visible: false
+  text: |
+    class Test:
+        def __init__(self, alpha, Beta=1):
+            self.alpha = alpha
+
+        def function(self):
+            print(self.alpha)
+
+        def okey(self, s=None):
+            print("okey")
+  learner_created: false
+- name: test/this_stage/test_5.py
+  visible: false
+  text: |
+    class Test:
+        def __init__(self, alpha, beta=1):
+            Beta = beta
+
+        def function(self):
+            print("Beta")
+
+        def okey(self, s=None):
+            Variable = s
+            print(Variable)
+  learner_created: false
+- name: test/this_stage/test_3.py
+  visible: false
+  text: |
+    class Test:
+        def __init__(self, alpha, beta=1):
+            self.alpha = alpha
+            self.beta = beta
+
+        def function(self):
+            print(self.alpha)
+
+        def mutable_var(self, s=[]):
+            print(s)
+
+        def okey(self, s=None):
+            print("okey")
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/112/stages/613/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">JetBrains
+    Academy</a> to continue learning.
+  time: Sun, 17 Apr 2022 18:53:25 UTC
 record: -1
